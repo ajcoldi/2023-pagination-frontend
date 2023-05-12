@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.tag{
+  background: #f4f4f4 ;
+  border: solid 2px #d8d8d8;
+  width: fit-content;
+
+}
+.selected{
+  background: rgb(195, 208, 236);
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.sorting-container {
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sorting-container.show {
+  opacity: 1;
+  visibility: visible;
+}
